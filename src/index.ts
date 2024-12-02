@@ -5,15 +5,12 @@ import Object from "@rbxts/object-utils";
 type Maybe<T> = T | undefined;
 
 export class Firebase {
-	private readonly authQuery: string;
 	private readonly baseURL: string;
+	private readonly authQuery: string;
 
-	public constructor(
-		private readonly dbUrl: string,
-		private readonly authKey: string
-	) {
-		this.authQuery = `.json?auth=${this.authKey}`;
-		this.baseURL = this.fixPath(this.dbUrl) + "/";
+	public constructor(url: string, authorization: string) {
+		this.baseURL = this.fixPath(url) + "/";
+		this.authQuery = `.json?auth=${authorization}`;
 	}
 
 	/**
