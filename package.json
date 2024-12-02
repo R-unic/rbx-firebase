@@ -7,10 +7,16 @@
     "watch": "rbxtsc -w",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "roblox",
+    "rbxts",
+    "firebase",
+    "database",
+    "data"
+  ],
+  "author": "runicly",
   "license": "ISC",
-  "description": "",
+  "description": "Firebase real-time database wrapper for Roblox",
   "types": "out/index.d.ts",
   "files": [
     "out",
@@ -26,8 +32,8 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@rbxts/object-utils": "^1.0.4",
     "@rbxts/services": "^1.5.5",
+    "@rbxts/object-utils": "^1.0.4",
     "@rbxts/string-utils": "^1.0.3"
   }
 }
